@@ -22,3 +22,14 @@ export const Label = styled.label`
 export const ErrorMsg = styled(ErrorMessage)`
   color: ${props => props.theme.colors.red};
 `;
+export const ButtonAdd = styled.button`
+  background-color: ${props => props.theme.colors.grey};
+  padding: ${props => props.theme.spasing(2)};
+  margin: 0;
+  border: none;
+
+  &:hover {
+    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.green};
+  }
+`;

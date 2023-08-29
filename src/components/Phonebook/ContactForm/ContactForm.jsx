@@ -1,5 +1,11 @@
 import { Formik } from 'formik';
-import { StyledForm, StyledField, Label, ErrorMsg } from './ContactForm.styled';
+import {
+  StyledForm,
+  StyledField,
+  Label,
+  ErrorMsg,
+  ButtonAdd,
+} from './ContactForm.styled';
 import * as Yup from 'yup';
 
 const FormShema = Yup.object().shape({
@@ -44,7 +50,7 @@ export const ContactForm = ({ onAdd }) => {
           <ErrorMsg name="number" component="div" />
         </Label>
 
-        <button type="submit">Add contact</button>
+        <ButtonAdd type="submit">Add contact</ButtonAdd>
       </StyledForm>
     </Formik>
   );
